@@ -1,0 +1,322 @@
+export const DB = [{
+	court: "A",
+	day: 5,
+	month: 4,
+	time: 13,
+	user: null
+}, {
+	court: "B",
+	day: 5,
+	month: 4,
+	time: 14,
+	user: null
+}, {
+	court: "A",
+	day: 5,
+	month: 4,
+	time: 15,
+	user: null
+}, {
+	court: "B",
+	day: 5,
+	month: 4,
+	time: 16,
+	user: null
+}, {
+	court: "A",
+	day: 5,
+	month: 4,
+	time: 17,
+	user: null
+}, {
+	court: "A",
+	day: 6,
+	month: 4,
+	time: 12,
+	user: null
+}, {
+	court: "B",
+	day: 6,
+	month: 4,
+	time: 13,
+	user: null
+}, {
+	court: "B",
+	day: 6,
+	month: 4,
+	time: 17,
+	user: null
+}, {
+	court: "A",
+	day: 7,
+	month: 4,
+	time: 10,
+	user: null
+}, {
+	court: "A",
+	day: 7,
+	month: 4,
+	time: 16,
+	user: null
+}, {
+	court: "B",
+	day: 7,
+	month: 4,
+	time: 17,
+	user: null
+}, {
+	court: "B",
+	day: 8,
+	month: 4,
+	time: 10,
+	user: null
+}, {
+	court: "A",
+	day: 8,
+	month: 4,
+	time: 17,
+	user: null
+}, {
+	court: "B",
+	day: 8,
+	month: 4,
+	time: 17,
+	user: null
+}, {
+	court: "A",
+	day: 9,
+	month: 4,
+	time: 12,
+	user: null
+}, {
+	court: "B",
+	day: 9,
+	month: 4,
+	time: 14,
+	user: null
+}, {
+	court: "A",
+	day: 9,
+	month: 4,
+	time: 16,
+	user: null
+}, {
+	court: "B",
+	day: 9,
+	month: 4,
+	time: 16,
+	user: null
+}, {
+	court: "A",
+	day: 10,
+	month: 4,
+	time: 12,
+	user: null
+}, {
+	court: "B",
+	day: 10,
+	month: 4,
+	time: 15,
+	user: null
+}, {
+	court: "A",
+	day: 10,
+	month: 4,
+	time: 16,
+	user: null
+}, {
+	court: "B",
+	day: 10,
+	month: 4,
+	time: 17,
+	user: null
+}, {
+	court: "A",
+	day: 11,
+	month: 4,
+	time: 12,
+	user: null
+}, {
+	court: "B",
+	day: 11,
+	month: 4,
+	time: 16,
+	user: null
+},
+{
+	court: "B",
+	day: 11,
+	month: 4,
+	time: 17,
+	user: null
+},
+{
+	court: "A",
+	day: 12,
+	month: 4,
+	time: 11,
+	user: null
+}, {
+	court: "A",
+	day: 12,
+	month: 4,
+	time: 12,
+	user: null
+}, {
+	court: "A",
+	day: 12,
+	month: 4,
+	time: 14,
+	user: null
+}, {
+	court: "A",
+	day: 13,
+	month: 4,
+	time: 11,
+	user: null
+}, {
+	court: "B",
+	day: 13,
+	month: 4,
+	time: 11,
+	user: null
+}, {
+	court: "A",
+	day: 13,
+	month: 4,
+	time: 15,
+	user: null
+}, {
+	court: "A",
+	day: 14,
+	month: 4,
+	time: 11,
+	user: null
+}, {
+	court: "B",
+	day: 14,
+	month: 4,
+	time: 12,
+	user: null
+}, {
+	court: "A",
+	day: 13,
+	month: 4,
+	time: 14,
+	user: null
+}, {
+	court: "B",
+	day: 14,
+	month: 4,
+	time: 15,
+	user: null
+}, {
+	court: "A",
+	day: 14,
+	month: 4,
+	time: 15,
+	user: null
+}, {
+	court: "B",
+	day: 14,
+	month: 4,
+	time: 16,
+	user: null
+}, {
+	court: "A",
+	day: 14,
+	month: 4,
+	time: 17,
+	user: null
+}, {
+	court: "A",
+	day: 15,
+	month: 4,
+	time: 12,
+	user: null
+}, {
+	court: "B",
+	day: 15,
+	month: 4,
+	time: 13,
+	user: null
+}, {
+	court: "A",
+	day: 15,
+	month: 4,
+	time: 13,
+	user: null
+}, {
+	court: "B",
+	day: 15,
+	month: 4,
+	time: 15,
+	user: null
+}, {
+	court: "B",
+	day: 16,
+	month: 4,
+	time: 10,
+	user: null
+}, {
+	court: "A",
+	day: 16,
+	month: 4,
+	time: 12,
+	user: null
+}, {
+	court: "B",
+	day: 16,
+	month: 4,
+	time: 13,
+	user: null
+}, {
+	court: "A",
+	day: 16,
+	month: 4,
+	time: 16,
+	user: null
+}, {
+	court: "B",
+	day: 16,
+	month: 4,
+	time: 16,
+	user: null
+}, {
+	court: "A",
+	day: 17,
+	month: 4,
+	time: 10,
+	user: null
+}, {
+	court: "B",
+	day: 17,
+	month: 4,
+	time: 14,
+	user: null
+}, {
+	court: "B",
+	day: 17,
+	month: 4,
+	time: 16,
+	user: null
+}, {
+	court: "A",
+	day: 18,
+	month: 4,
+	time: 10,
+	user: null
+}, {
+	court: "A",
+	day: 18,
+	month: 4,
+	time: 17,
+	user: null
+}, {
+	court: "B",
+	day: 18,
+	month: 4,
+	time: 17,
+	user: null,
+},
+]
