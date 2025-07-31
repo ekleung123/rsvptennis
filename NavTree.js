@@ -49,7 +49,7 @@ function NavTree() {
         screenOptions={{
           headerShown: true,
           headerStyle: {
-            height: 80,
+            height: 50,
           },
           drawerStyle: {
             width: 280,

@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Image} from "react-native";
 import TimeSlot from "../components/TimeSlot";
 import LoadingSpinner from "../components/LoadingSpinner";
 import { useFetchBooked } from "../hooks/useFetchBooked";
 import NavButton from "../components/NavButton";
 
 import { useContext, useEffect } from "react"; 
-import { AuthContext } from "../context/AuthContext";  
+import { AuthContext } from "../context/AuthContext";
 
-function YourBookings(props) {
+const nothingfound = require("../assets/nothingfound.png");
+
+export default function YourBookings(props) {
   const store = useContext(AuthContext);
   const {timeslots, isLoading} = useFetchBooked();
 
@@ -42,12 +44,15 @@ function YourBookings(props) {
           )) 
         }
       </View>
-      <NavButton type="home" />
+      <View>
+        { timeslots.length == 0 && <Image source={nothingfound} style={styles.nothingfound} />} 
+      </View>
+      <View style={{marginTop: 10}}>
+        <NavButton type="home" />
+      </View>
     </View>
   );
 };
-
-export default YourBookings;
 
 const styles = StyleSheet.create({
   screenContainer: {
@@ -67,4 +72,9 @@ const styles = StyleSheet.create({
   body: {
     marginTop: 10,
   },
+  nothingfound: {
+    alignSelf: "center",
+    width: 150,
+    height: 150,
+  }
 });

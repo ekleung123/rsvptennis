@@ -3,6 +3,9 @@ import { AuthContextProvider } from "./context/AuthContext";
 import { useFonts } from 'expo-font';
 import NavTree from "./NavTree";
 
+import { firebaseConfig } from "./firebase/config";
+import { DBERROR } from "./constants/constants";
+
 export default function App() {
   const [fontsLoaded] = useFonts({
     "EncodeSans": require("./assets/fonts/EncodeSans-Regular.ttf"),
@@ -10,6 +13,8 @@ export default function App() {
     "Tauri": require("./assets/fonts/Tauri.ttf"),
     "DelaGothicOne": require("./assets/fonts/DelaGothicOne.ttf"),
   });
+
+  if (!firebaseConfig.projectId) alert(DBERROR);
 
   if (!fontsLoaded) {
     return (

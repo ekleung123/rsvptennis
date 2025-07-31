@@ -1,7 +1,7 @@
 import { Text, StyleSheet, View } from "react-native";
 import { Entypo } from '@expo/vector-icons'; 
 
-function ConfirmButton(props) {  
+export default function ConfirmButton(props) {  
   return (
     <View style={styles.button}>
       <View style={styles.buttontext}>
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: "green",
   },
   text: {
-    fontSize: 15,
+    fontSize: 20,
     lineHeight: 21,
     letterSpacing: 0.25,
     color: "white",
@@ -39,5 +39,3 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },  
 });
-
-export default ConfirmButton;

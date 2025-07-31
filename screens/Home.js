@@ -5,7 +5,7 @@ import { useGetBookingCount } from "../hooks/useGetBookingCount";
 const grass = require("../assets/grassball.png");
 const tennisplayers = require("../assets/tennisplayers.png");
 
-function Home(props) {
+export default function Home(props) {
   useGetBookingCount();
   return (
     <View style={styles.screenContainer}>
@@ -35,8 +35,6 @@ function Home(props) {
     </View>
   );
 };
-
-export default Home;
 
 const styles = StyleSheet.create({
   screenContainer: {

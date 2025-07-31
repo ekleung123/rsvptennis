@@ -13,7 +13,7 @@ import { PopupAlert } from "../components/PopupAlert";
 import { useContext, useEffect } from "react"; 
 import { AuthContext } from "../context/AuthContext";  
 
-function ShowAvailability(props) {  
+export default function ShowAvailability(props) {  
   const store = useContext(AuthContext);
   const chosenDate = props.route.params.day;
   const {timeslots, isLoading} = useFetchByDate(chosenDate);
@@ -58,14 +58,12 @@ function ShowAvailability(props) {
           )) 
         }
       </View>
-      <View>
+       <View style={{marginTop: 10}}>
         <NavButton type="searchanother" />
       </View>
     </View>
   );
 };
-
-export default ShowAvailability;
 
 const styles = StyleSheet.create({
   screenContainer: {

@@ -4,7 +4,7 @@ import { DrawerContentScrollView,
 
 const logo = require("../assets/mppplogo.png"); 
 
-function CustomDrawer(props){
+export default function CustomDrawer(props){
   return (
     <View style={{flex: 1}}>
       <View>
@@ -18,8 +18,6 @@ function CustomDrawer(props){
     </View>
   );
 };
-
-export default CustomDrawer;
 
 const styles = StyleSheet.create({
   logoContainer: {

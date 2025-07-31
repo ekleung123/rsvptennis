@@ -1,10 +1,10 @@
 {
   "expo": {
     "experiments": {
-      "baseUrl": "file:///C:/Users/ekleu/Documents/Portfolio/tennis1/dist/"
+      "baseUrl": ""
     },
-    "name": "tennis1",
-    "slug": "tennis1",
+    "name": "tennis",
+    "slug": "tennis",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

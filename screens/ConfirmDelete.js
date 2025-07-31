@@ -7,7 +7,7 @@ import ConfirmButton from "../components/ConfirmButton";
 import { useDeleteBooking } from "../hooks/useDeleteBooking";
 import { useFocusEffect } from '@react-navigation/native';
 
-function ConfirmDelete(props){
+export default function ConfirmDelete(props){
   const params = props.route.params;
   const { 
     deleteBooking, 
@@ -57,7 +57,7 @@ function ConfirmDelete(props){
           type={type}          
         />
       </View>
-      <View>
+      <View style={{marginTop: 20}}>
       { (success == 0) && (
         <Pressable onPress={() => deleteBooking(params.id, params.user)}>
           <ConfirmButton />
@@ -69,8 +69,6 @@ function ConfirmDelete(props){
     </View>
   );
 };
-
-export default ConfirmDelete;
 
 const styles = StyleSheet.create({
   screenContainer: {

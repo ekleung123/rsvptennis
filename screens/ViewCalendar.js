@@ -8,22 +8,20 @@ import NavButton from "../components/NavButton";
 import { useContext, useEffect } from "react"; 
 import { AuthContext } from "../context/AuthContext";  
 
-function ViewCalendar(props) {
+export default function ViewCalendar(props) {
   const store = useContext(AuthContext);
   let calendarObj = useCreateCalendarObj(STARTDATE);
 
   return (
     <View style={styles.screenContainer}>
-      <Text style={styles.pageHeader}>
-        Booking Rules
-      </Text>
-      <Text style={styles.text}>
-        Reservations can only be made two weeks in advance.  
-        You're permitted to hold only two reservations at a time.  
-      </Text>
-      <Text style={styles.text}>
-        Please select from one of the highlighted dates below.
-      </Text>
+
+
+      { (store.amountBooked !== 2) && (
+        <Text style={styles.text}>
+          <Text style={styles.bold}>Reminder:</Text> You're limited to two reservations at a time.  
+        </Text>
+      )}
+
       { (store.amountBooked == 2) && <ScreenAlert msg={OVERBOOKEDMSG} /> }
         <Calendar
           current={STARTDATE}
@@ -33,18 +31,19 @@ function ViewCalendar(props) {
           onDayPress={day => {
             props.navigation.navigate("Show Availability", day);
           }}
-      />
+        />
       <NavButton type="home" />
     </View>
   );
 };
 
-export default ViewCalendar;  
-
 const styles = StyleSheet.create({
   screenContainer: {
     flex: 1,
     padding: 12, 
+  },
+  bold: {
+    fontWeight: "bold"
   },
   text: {
     fontFamily: "EncodeSans",
@@ -61,19 +60,29 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   calendarTheme: {
-    backgroundColor: 'red',
-    calendarBackground: "#7FBC7A",
-    textSectionTitleColor: '#b6c1cd',
-    selectedDayBackgroundColor: '#00adf5',
+    backgroundColor: '#ffffff',
+    calendarBackground: '#778899',
+    textSectionTitleColor: '#ffffff',
+    textSectionTitleDisabledColor: '#ffffff',
+    selectedDayBackgroundColor: '#ffffff',
     selectedDayTextColor: '#ffffff',
     todayTextColor: '#00adf5',
     dayTextColor: 'white',
-    margin: 10,
-    textSectionTitleColor: 'white',
+    textDisabledColor: 'gray',
+    dotColor: '#00adf5',
+    selectedDotColor: '#ffffff',
+    arrowColor: 'white',
+    disabledArrowColor: '#d9e1e8',
     monthTextColor: 'white',
-    textMonthFontSize: 22,
-    textMonthFontFamily: 'DelaGothicOne',
-    arrowColor: 'red',
-    disabledArrowColor: 'red',
+    indicatorColor: 'white',
+    textDayFontFamily: 'monospace',
+    textMonthFontFamily: 'Verdana',
+    textDayHeaderFontFamily: 'monospace',
+    textDayFontWeight: '300',
+    textMonthFontWeight: 'bold',
+    textDayHeaderFontWeight: '300',
+    textDayFontSize: 16,
+    textMonthFontSize: 36,
+    textDayHeaderFontSize: 16
   }
 });

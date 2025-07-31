@@ -41,6 +41,5 @@ export const useFetchByDate = (day) => {
     }, [day])
   );
   
-  // console.log("useFetchByDate.js | db accessed");
   return {timeslots, isLoading};
 };

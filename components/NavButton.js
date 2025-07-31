@@ -6,7 +6,7 @@ import { Entypo } from '@expo/vector-icons';
 import { useContext } from "react"; 
 import { AuthContext } from "../context/AuthContext"; 
 
-function NavButton(props) {
+export default function NavButton(props) {
   const navigation = useNavigation();
   const store = useContext(AuthContext);
 
@@ -105,10 +105,10 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     // elevation: 3,
     margin: 6,
-    width: "70%",
+    width: "80%",
   },
   text: {
-    fontSize: 15,
+    fontSize: 20,
     lineHeight: 21,
     // letterSpacing: 0.25,
     color: "white",
@@ -122,5 +122,3 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },  
 });
-
-export default NavButton;

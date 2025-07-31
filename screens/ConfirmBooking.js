@@ -7,7 +7,7 @@ import ConfirmButton from "../components/ConfirmButton";
 import { useMakeBooking } from "../hooks/useMakeBooking";
 import { useFocusEffect } from '@react-navigation/native';
 
-function ConfirmBooking(props){
+export default function ConfirmBooking(props){
   const params = props.route.params;
   const { 
     makeBooking, 
@@ -57,7 +57,7 @@ function ConfirmBooking(props){
           type={type}          
         />
       </View>
-      <View>
+      <View style={{marginTop: 20}}>
       { (success == 0) && (
         <Pressable onPress={() => makeBooking(params.id, params.user)}>
           <ConfirmButton />
@@ -69,8 +69,6 @@ function ConfirmBooking(props){
     </View>
   );
 };
-
-export default ConfirmBooking;
 
 const styles = StyleSheet.create({
   screenContainer: {

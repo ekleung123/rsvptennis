@@ -3,7 +3,7 @@ import NavButton from "../components/NavButton";
 import ScreenAlert from "../components/ScreenAlert";
 import { OVERBOOKEDMSG } from "../constants/constants";
 
-function Overbooked() {  
+export default function Overbooked() {  
   return (
     <View style={styles.screenContainer}>
       <Text style={styles.pageHeader}>You're Overbooked!</Text>
@@ -16,8 +16,6 @@ function Overbooked() {
     </View>
   );
 };
-
-export default Overbooked;
 
 const styles = StyleSheet.create({
   screenContainer: {

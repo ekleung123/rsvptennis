@@ -8,14 +8,14 @@ import ScreenAlert from "../components/ScreenAlert";
 const bgImage = require("../assets/tennisball.png"); 
 const logo = require("../assets/mppplogo.png"); 
 
-function LogIn(props) {
+export default function LogIn(props) {
   return (
     <>
       <ImageBackground 
         source={bgImage} resizeMode="cover" style={styles.imgbkg}>
       </ImageBackground>
     
-      <View style={styles.screenContainer}>
+      <View style={styles.screenContainer} nestedScrollEnabled={true} scrollEnabled={true}>
         <View style={styles.logoContainer}>
           <Image source={logo} style={styles.logo} /> 
         </View>
@@ -26,8 +26,7 @@ function LogIn(props) {
           <FormInput icon="user" value={USERNAME} label="ID" />
           <FormInput icon="lock1" value="●●●●●●●●" label="Password" />
           <ScreenAlert 
-            msg="For this demonstration, please click LOG IN below.
-            These form fields are uneditable." 
+            msg="For this demonstration, please click LOG IN below. The form fields are uneditable." 
           />
           <NavButton type={"login"} />
         </View>
@@ -35,8 +34,6 @@ function LogIn(props) {
     </>
   );
 };
-
-export default LogIn;
 
 const styles = StyleSheet.create({
   screenContainer: {

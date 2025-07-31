@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet, TextInput } from "react-native";
 import { AntDesign } from '@expo/vector-icons'; 
 
-function FormInput(props){
+export default function FormInput(props){
   return (
     <>
       <Text style={styles.inputText}>
@@ -15,20 +15,18 @@ function FormInput(props){
   );
 };
 
-export default FormInput;
-
 const styles = StyleSheet.create({
   inputText: {
     fontWeight: "bold",
     fontFamily: "EncodeSans",
-    fontSize: 16,
+    fontSize: 18,
     color: "black",
   },
   inputField: {
-    fontSize: 14,
+    fontSize: 18,
     height: 40,
     margin: 5,
-    borderWidth: 1, fontFamily: "EncodeSans",
+    borderWidth: 2, fontFamily: "EncodeSans",
     paddingLeft: 20,
     backgroundColor: "white",
     borderRadius: 15,
